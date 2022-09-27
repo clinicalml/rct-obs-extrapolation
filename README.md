@@ -1,7 +1,7 @@
 # rct-obs-extrapolation
 Code for paper, "Falsification before Extrapolation in Causal Effect Estimation"
 
-Working directory for project on validating observational studies with a randomized clinical trial that has partial overlap for robust inference on the non-overlap region. **This repo is currently under construction. Check back later for end-to-end notebooks recreating the results of our NeurIPS 2022 Paper, "Falsification before Extrapolation in Causal Effect Estimation"**
+**This repo is currently under construction. Check back later for end-to-end notebooks recreating the results of our NeurIPS 2022 Paper, "Falsification before Extrapolation in Causal Effect Estimation"**
 
 ## Datasets
 
