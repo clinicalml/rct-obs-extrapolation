@@ -1,0 +1,8 @@
+setting: 'demo_real'
+root: ''
+save_folder_name: 'demo_updated_real'
+num_iters: 1
+alpha: 0.05 
+strata_mod: ''
+strata_metadata_mod: ''
+params_mod: '' 

@@ -1,0 +1,27 @@
+setting: 'demo2'
+root: ''
+save_folder_name: 'demo_updated2'
+num_iters: 1
+alpha: 0.05 
+strata_mod: ''
+strata_metadata_mod: ''
+params_mod:  [[ 
+                ['obs_dict',{
+                    'num_obs': 5,
+                    'sizes': [5.,5.,5.,5.,5.,],
+                    'confounder_concealment': [0,0,2,4,6],
+                    'missing_bias': [False,False,False,False,False]
+                 }],
+                ['response_surface', {
+                            'ctr': 'non_linear', 
+                            'trt': 'linear',
+                            'model': 'MLP',
+                            'hp': {'hidden_layer_sizes': [(50,50)],
+                                    'activation': ['relu'],
+                                    'solver': ['adam'],
+                                    'alpha': [.0001],
+                                    'learning_rate': ['adaptive'],
+                                    'learning_rate_init': [.001],
+                                    'max_iter': [200]}
+                  }] 
+              ]] 

@@ -1,0 +1,90 @@
+setting: 'upsize'
+root: ''
+save_folder_name: 'upsizemlp_full_reweight_correction'
+num_iters: 50
+alpha: 0.05 
+strata_mod: ''
+strata_metadata_mod: ''
+params_mod: [
+                    [
+                        ['obs_dict',{
+                            'num_obs': 5,
+                            'sizes': [1.,1.,1.,1.,1.],
+                            'confounder_concealment': [0,0,2,4,6],
+                            'missing_bias': [False,False,False,False,False]
+                        }],
+                        ['response_surface', {
+                            'ctr': 'non_linear', 
+                            'trt': 'linear',
+                            'model': 'MLP',
+                            'hp': {'hidden_layer_sizes': [(25,25)],
+                                    'activation': ['relu'],
+                                    'solver': ['adam'],
+                                    'alpha': [.0001],
+                                    'learning_rate': ['adaptive'],
+                                    'learning_rate_init': [1e-3],
+                                    'max_iter': [250]}
+                        }]
+                    ],
+                    [
+                        ['obs_dict',{
+                            'num_obs': 5,
+                            'sizes': [3.,3.,3.,3.,3.],
+                            'confounder_concealment': [0,0,2,4,6],
+                            'missing_bias': [False,False,False,False,False]
+                        }],
+                        ['response_surface', {
+                            'ctr': 'non_linear', 
+                            'trt': 'linear',
+                            'model': 'MLP',
+                            'hp': {'hidden_layer_sizes': [(25,25)],
+                                    'activation': ['relu'],
+                                    'solver': ['adam'],
+                                    'alpha': [.0001],
+                                    'learning_rate': ['adaptive'],
+                                    'learning_rate_init': [1e-3],
+                                    'max_iter': [250]}
+                        }]
+                    ],
+                    [
+                        ['obs_dict',{
+                            'num_obs': 5,
+                            'sizes': [5.,5.,5.,5.,5.],
+                            'confounder_concealment': [0,0,2,4,6],
+                            'missing_bias': [False,False,False,False,False]
+                        }],
+                        ['response_surface', {
+                            'ctr': 'non_linear', 
+                            'trt': 'linear',
+                            'model': 'MLP',
+                            'hp': {'hidden_layer_sizes': [(25,25)],
+                                    'activation': ['relu'],
+                                    'solver': ['adam'],
+                                    'alpha': [.0001],
+                                    'learning_rate': ['adaptive'],
+                                    'learning_rate_init': [1e-3],
+                                    'max_iter': [250]}
+                        }]
+                    ],
+                    [
+                        ['obs_dict',{
+                            'num_obs': 5,
+                            'sizes': [10,10,10,10,10],
+                            'confounder_concealment': [0,0,2,4,6],
+                            'missing_bias': [False,False,False,False,False]
+                        }],
+                        ['response_surface', {
+                            'ctr': 'non_linear', 
+                            'trt': 'linear',
+                            'model': 'MLP',
+                            'hp': {'hidden_layer_sizes': [(25,25)],
+                                    'activation': ['relu'],
+                                    'solver': ['adam'],
+                                    'alpha': [.0001],
+                                    'learning_rate': ['adaptive'],
+                                    'learning_rate_init': [1e-3],
+                                    'max_iter': [250]}
+                        }]
+                    ]
+              ] 
+    
